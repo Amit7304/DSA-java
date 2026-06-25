@@ -5,7 +5,7 @@ public class Loop {
         
         // ******   while looop   ******
 
-         Scanner sc = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
         // System.out.println("sum of N natural number , enter value of N");
         // int n = sc.nextInt();
         // int i=0;
