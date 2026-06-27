@@ -68,30 +68,49 @@ public class Array {
 
     /******************* REVERSE ********************/
     // public static void reverse(int num[]) {
-    // int first = 0, last = num.length - 1;
-    // while (first < last) {
-    // int temp = num[last];
-    // num[last] = num[first];
-    // num[first] = temp;
-    // first++;
-    // last--;
-    // }
+    //     int first = 0, last = num.length - 1;
+    //     while (first < last) {
+    //         int temp = num[last];
+    //         num[last] = num[first];
+    //         num[first] = temp;
+    //         first++;
+    //         last--;
+    //     }
 
     // }
 
     // public static void main(String[] args) {
-    // int num[] = { 2, 3, 5, 6, 7, 9, 13 };
+    //     int num[] = { 2, 3, 5, 6, 7, 9, 13 };
 
-    // reverse(num);
-    // for (int i = 0; i < num.length; i++) {
-    // System.out.print(num[i] + " ");
-    // }
-    // System.out.println();
+    //     reverse(num);
+    //     for (int i = 0; i < num.length; i++) {
+    //         System.out.print(num[i] + " ");
+    //     }
+    //     System.out.println();
     // }
 
     /*********************** SUBARRAY ****************************/
 
-    public static void Subarray(int num[]) {
+    // public static void Subarray(int num[]){
+    //      for(int i=0; i<num.length;i++){
+    //         int start = i;
+    //         for(int j=0; i<num.length;j++){
+    //             int endd = j;
+    //             for(int k=start; k<=endd; k++){
+    //                 System.out.print(num[k]+" ");
+    //             }
+    //             System.out.println();
+    //         }
+    //         System.out.println();
+                
+    //      }
+    // }
+
+
+    /*********************** MAX SUBARRAY SUM ****************************/
+
+
+    public static void maxSubarray_SUM(int num[]) {
         int maxSum = Integer.MIN_VALUE;
         for (int i = 0; i < num.length; i++) {
             int start = i;
@@ -112,10 +131,11 @@ public class Array {
         }
         System.out.println("maxsum is : "+ maxSum);
     }
-
     public static void main(String[] args) {
-        int num[] = { 2, 4, 6, 8, 10 };
-        Subarray(num);
+        int num[] = { 2, 3, 4, 5, 6,7};
+        maxSubarray_SUM(num);
     }
 
 }
+
+
