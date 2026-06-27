@@ -8,7 +8,7 @@ I am currently focusing on improving my problem-solving skills and preparing for
 
 ## 📌 Topics Covered
 
-- Arrays
+- Arrays ....
 - Sorting Algorithms
   - Bubble Sort
   - Selection Sort
@@ -51,7 +51,7 @@ I am currently focusing on improving my problem-solving skills and preparing for
 
 ✔ Started DSA Journey  
 ✔ Basic concepts covered  
-⏳ Working on advanced problems  
+Working on advanced problems  
 
 ---
 
