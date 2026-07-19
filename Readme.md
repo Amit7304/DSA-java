@@ -45,7 +45,7 @@ I am currently focusing on improving my problem-solving skills and preparing for
 - Crack technical interviews
 - Improve problem-solving speed and accuracy
 
----
+-----
 
 ## 🔥 Progress
 
@@ -53,12 +53,13 @@ I am currently focusing on improving my problem-solving skills and preparing for
 ✔ Basic concepts covered  
 Working on advanced problems  
 
----
+-----
 
 ## 🤝 Connect With Me
 
 - GitHub: https://github.com/Amit7304
 
----
+-----
 
-⭐ If you find this helpful, feel free to star the repo!
+⭐ If you find this helpful, feel free to star the repo! thanks......
+

@@ -39,3 +39,6 @@ public class TrappingRainWater {
         System.out.println("Trapped Rain Water = " + result);
     }
 }
+
+
+
