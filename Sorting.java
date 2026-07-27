@@ -77,7 +77,7 @@ public class Sorting {
         }
     }
     public static void main(String args[]) {
-        int arr[] = { 5, 2, 4, 3,1,3,4,2,6,7,8,6 };
+        int arr[] = { 5, 2, 4,3,4,2,7,8,6,3,4,6,7,23,54,64 };
         bubbleSort(arr);
         //Arrays.sort(arr);
         printArr(arr);
