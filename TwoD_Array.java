@@ -16,7 +16,7 @@ class TwoD_Array{
             }
             //bottom
             for(int j=EndCol-1;j>=StartCol;j--){
-                if(StartRow == EndRow){
+                if(StartRow == EndRow){//condition for odd matrix like (NxM,NxN odd no.)
                     break;
                 }
                 System.out.print(matrix[EndRow][j]+" ");
