@@ -1,4 +1,5 @@
-class TwoD_Array{
+
+class PrintSpiral{
     public static void printspiral(int matrix[][]){
         int StartRow=0;
         int StartCol=0;
