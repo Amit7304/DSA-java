@@ -6,8 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="9393b9fd-9581-4a34-aee6-7498c64bab9a" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JAVA DSA/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JAVA DSA/Array.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JAVA DSA/Array.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,7 +35,6 @@
   "keyToString": {
     "Application.Array.executor": "Run",
     "Application.Functions.executor": "Run",
-    "Application.matriceSearch.executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
