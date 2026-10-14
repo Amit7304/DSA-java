@@ -60,11 +60,24 @@ public class Strings {
         // ispallindrom(str);
         // ispallindrom(str2);
 
-        // ****substring***
-        String str ="helloworld";
-        System.out.println(subString(str, 5, 9)); // using written function
+        // // ****substring***
+        // String str ="helloworld";
+        // System.out.println(subString(str, 5, 9)); // using written function
         
-        String subString = str.substring(0,5);// using inbuild java funtion 
-        System.out.println(subString);
+        // String subString = str.substring(0,5);// using inbuild java funtion 
+        // System.out.println(subString);
+
+
+        // comparing strings (give ans in dictionary style(lexicographic order))
+        String fruits []={"apple","mango","banana","papaya"};
+
+        String largest = fruits[0];
+        for(int  i=0;i<fruits.length;i++){
+            if(largest.compareTo(fruits[i])<0){
+                largest=fruits[i];
+            }
+        }
+        System.out.println(largest);
     }
+
 }
