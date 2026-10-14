@@ -16,6 +16,15 @@ public class Strings {
         System.out.println("yaaa , pallinndrome word");
         return true;
     }
+
+
+    public static String subString(String str, int si, int ei){
+        String substr="";
+        for (int i=si;i<=ei;i++){
+            substr += str.charAt(i);
+        }
+        return substr;
+    }
     public static void main(String[] args) {
         // String str="";
         // String str2= new String("xyz");
@@ -44,12 +53,18 @@ public class Strings {
 
         // System.out.println("Your name is => " +firstname +" "+lastname );
 
-        String str2 = "racecar";
-        String str = "carrace";
-        ispallindrom(str);
-        ispallindrom(str2);
 
-    
+        // ****Pallindrome***
+        // String str2 = "racecar";
+        // String str = "carrace";
+        // ispallindrom(str);
+        // ispallindrom(str2);
+
+        // ****substring***
+        String str ="helloworld";
+        System.out.println(subString(str, 5, 9)); // using written function
         
+        String subString = str.substring(0,5);// using inbuild java funtion 
+        System.out.println(subString);
     }
 }
