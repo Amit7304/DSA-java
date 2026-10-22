@@ -1,3 +1,4 @@
+package TwoD_Array;
 public class DiagonalSum {
 
     public static int diagonal_sum(int matrix[][]){

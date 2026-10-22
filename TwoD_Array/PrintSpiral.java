@@ -1,3 +1,4 @@
+package TwoD_Array;
 
 class PrintSpiral{
     public static void printspiral(int matrix[][]){

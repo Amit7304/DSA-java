@@ -1,14 +1,14 @@
 import java.util.*;
+import java.util.Arrays;
+
 public class Strings {
-    
 
+    // pallindrome in string
 
-    //pallindrome in string
-
-    public static boolean ispallindrom(String str){
-        for(int i=0; i<str.length()/2;i++){
+    public static boolean ispallindrom(String str) {
+        for (int i = 0; i < str.length() / 2; i++) {
             int n = str.length();
-            if (str.charAt(i) != str.charAt(n-1-(i))){
+            if (str.charAt(i) != str.charAt(n - 1 - (i))) {
                 System.out.println("sorry not a pallindrome word");
                 return false;
             }
@@ -17,13 +17,34 @@ public class Strings {
         return true;
     }
 
-
-    public static String subString(String str, int si, int ei){
-        String substr="";
-        for (int i=si;i<=ei;i++){
+    public static String subString(String str, int si, int ei) {
+        String substr = "";
+        for (int i = si; i <= ei; i++) {
             substr += str.charAt(i);
         }
         return substr;
+    }
+
+    /******************valid Anagram********************/
+
+    public static boolean Anagram(String s,String t){
+        if(s.length() == t.length()){
+            char[] S_charArray = s.toCharArray();
+            char[] t_charArray = t.toCharArray();
+
+            Arrays.sort(S_charArray);
+            Arrays.sort(t_charArray);
+
+            if(Arrays.equals(S_charArray,t_charArray)){
+                return true;
+            }
+            else{
+                return false;
+            }
+        }
+        else{
+            return false;
+        }
     }
     public static void main(String[] args) {
         // String str="";
@@ -31,17 +52,15 @@ public class Strings {
 
         // In java Strings are IMMUTABLE
 
-        //Input/output in string
-         //Scanner sc = new Scanner (System.in);
+        // Input/output in string
+        // Scanner sc = new Scanner (System.in);
         // String name;
         // name = sc.nextLine();
         // System.out.println("This is a String=>"+name);
 
-
         // //string Length
         // String Fullname= "Amit Kumar";
         // System.out.println(Fullname.length());
-
 
         // //Concatenation
         // System.out.println("Enter first name");
@@ -53,7 +72,6 @@ public class Strings {
 
         // System.out.println("Your name is => " +firstname +" "+lastname );
 
-
         // ****Pallindrome***
         // String str2 = "racecar";
         // String str = "carrace";
@@ -63,21 +81,44 @@ public class Strings {
         // // ****substring***
         // String str ="helloworld";
         // System.out.println(subString(str, 5, 9)); // using written function
-        
-        // String subString = str.substring(0,5);// using inbuild java funtion 
+
+        // String subString = str.substring(0,5);// using inbuild java funtion
         // System.out.println(subString);
 
+        // // comparing strings (give ans in dictionary style(lexicographic order))
+        // String fruits []={"apple","mango","banana","papaya"};
 
-        // comparing strings (give ans in dictionary style(lexicographic order))
-        String fruits []={"apple","mango","banana","papaya"};
+        // String largest = fruits[0];
+        // for(int i=0;i<fruits.length;i++){
+        // if(largest.compareTo(fruits[i])<0){
+        // largest=fruits[i];
+        // }
+        // }
+        // System.out.println(largest);
 
-        String largest = fruits[0];
-        for(int  i=0;i<fruits.length;i++){
-            if(largest.compareTo(fruits[i])<0){
-                largest=fruits[i];
-            }
-        }
-        System.out.println(largest);
+        /* String builders */
+
+        // StringBuilder sb = new StringBuilder("");
+        // for (char ch = 'a'; ch <= 'z'; ch++) {
+        //     sb.append(ch);
+        // }
+        // System.out.println(sb);
+        // System.out.println(sb.length());
+
+        
+        String s = "racecar";
+        String t = "carrace";
+
+        String s1 = "listen";
+        String t1 = "silent";
+
+        String s2 = "rat";
+        String t2 = "rap";
+
+        System.out.println(Anagram(s2, t2));
+
+
+
+
     }
-
 }
