@@ -16,6 +16,7 @@ I am currently focusing on improving my problem-solving skills and preparing for
 - Functions & Methods
 - Loops & Conditionals
 - Patterns
+- Recursion
 - Basic Problem Solving
 
 (More topics will be added as I progress...)
@@ -34,7 +35,6 @@ I am currently focusing on improving my problem-solving skills and preparing for
 
 - Practice daily coding problems
 - Focus on understanding logic, not just syntax
-- Write clean and readable code
 - Push progress regularly to GitHub
 
 ---
