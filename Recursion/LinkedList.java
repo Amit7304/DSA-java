@@ -1,57 +1,65 @@
 package Recursion;
 
-class Node {
-	int data;
-	Node next;
+public class LinkedList {
+	public static class Node {
+		int data;
+		Node next;
 
-	Node(int data) {
-		this.data = data;
-		this.next = null;
+		public Node(int data) {
+			this.data = data;
+			this.next = null;
+		}
 	}
 
-}
+	public static Node head;
+	public static Node tail;
 
-public class LinkedList {
+	// insert a node at first
+	public void addfirst(int data) {
+		Node newNode = new Node(data);// create new Node
+		if (head == null) {
+			head = tail = newNode;
+			return;
+		}
+		newNode.next = head;// connect new node or head
+		head = newNode;// changfe head to first node
+
+	}
+
+	// insert a node at Last
+	public void addLast(int data) {
+		Node newNode = new Node(data);// create new Node
+		if (head == null) {
+			head = tail = newNode;
+			return;
+		}
+		tail.next = newNode;// connect new node or tail
+		tail = newNode;// changfe head to last node
+
+	}
+
+	// travering/print a Linked List//O(n)
+	public void print(){
+		if(head == null){
+			System.out.println("Linked List is empty");
+			return;
+		}
+		Node temp =head;
+		while (temp != null){
+			System.out.println(temp.data);
+			temp=temp.next;
+		}
+	}
 
 	public static void main(String[] args) {
-
-		/************** USING LIST INTERFACE(COLLECTIONS) **************/
-		// LinkedList<String> Animals = new LinkedList<>();
-		// Animals.add("cat");
-		// Animals.add("Rat");
-		// Animals.add("Dog");
-		// Animals.add("snake");
-		// Animals.addLast("chicken");
-		// Animals.add(2, "Goat");
-		// Animals.addFirst("Horse");
-		// Animals.remove(3);
-		// System.out.println(Animals);
-
-		/************ NORMAL FORM (MANUALLY) ****************/
-		Node first = new Node(5);
-		Node second = new Node(15);
-		Node third = new Node(25);
-
-		first.next = second;
-		second.next = third;
-
-		Node head = first;
-
-		// System.out.println(head.data);
-		// System.out.println(head.next.data);
-		// System.out.println(head.next.next.data);
-
-		// insertion a new node at beginning
-		Node newNode = new Node(2);
-		newNode.next = head;
-		head = newNode;
-
-		// traversing of an Linked list
-		Node temp = head;
-		while (temp != null) {
-			System.out.println(temp.data);
-			temp = temp.next;
-		}
+		LinkedList ll = new LinkedList();
+		ll.print();
+		ll.addfirst(2);
+		ll.addfirst(1);
+		ll.addfirst(0);
+		ll.addLast(3);
+		ll.addLast(4);
+		ll.print();
 
 	}
 
